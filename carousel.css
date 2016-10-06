@@ -1,0 +1,222 @@
+/* GLOBAL STYLES
+
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-top: 8.5625rem;
+  margin-bottom: 60px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  margin-top: 0;
+}
+.carousel .icon-prev, .carousel .icon-next {
+  width: 40px;
+  height: auto;
+  padding: 50px 10px 50px 10px;
+  vertical-align: middle;
+  margin: -75px 0 0 0;
+  background-color: #1b1b19 ;
+}
+.carousel .icon-prev {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+.carousel .icon-next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.carousel-control:hover {
+  opacity: 1;
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+.carousel-inner .left {
+  text-align: left;
+}
+.carousel-inner .center {
+  text-align: center;
+}
+.carousel-inner .right {
+  text-align: right;
+}
+.carousel-caption h2 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  color: #ffffff;
+}
+.carousel-caption p {
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 2em;
+  letter-spacing: .028em;
+  margin-bottom: 50px;
+}
+.carousel-caption .btn {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  border-radius: 0;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 0.225em;
+  text-transform: uppercase;
+  padding: 15px 30px 15px 30px;
+}
+.carousel-caption .yellow {
+  background-color: #fab702;
+  border-color: #fab702;
+  color: #ffffff;
+}
+.carousel-caption .blue {
+  background-color: #002d85;
+  border-color: #002d85;
+  color: #ffffff;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}*/
+
+
+/* Featurettes
+-------------------------
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more
+}
+
+/* Thin out the marketing headings
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}*/
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+	.carousel .item {
+		height: 400px;
+	}
+	.carousel-inner > .item > img {
+		height: 400px;
+	}
+	.carousel-inner .right {
+		right: 0;
+	}
+	.carousel-inner .left {
+		left: 0;
+	}
+	.carousel .icon-prev, .carousel .icon-next {
+		padding: 10px 10px 15px 10px;
+		margin: -15px 0 0 0;
+	}
+	.carousel-caption {
+		right: 0;
+		left: 0;
+	}
+	.carousel-caption h1 {
+    margin: 0 35px;
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
+	.carousel-caption p {
+  		font-size: 1em;
+  		font-weight: 700;
+  		line-height: 1em;
+  		letter-spacing: .028em;
+  		margin-bottom: 40px;
+	}
+	.carousel-caption .slide-caption {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 90px;
+	}
+	.carousel-caption .btn {
+		padding: 10px 15px 10px 15px;
+	}
+	.carousel-inner .right, .carousel-inner .left {
+		margin: 0 40px;
+	}
+}
+@media only screen and (max-width : 480px) {
+	.carousel-inner > .item > img {
+		height:150px;;
+	}
+  .carousel-caption h1 {
+    font-size: 1em;
+  }
+  .carousel-caption p {
+    font-size: 0.7em;
+  }
+  .carousel-inner .right, .carousel-inner .left {
+    margin: 0 25px;
+    top: -10px;;
+  }
+  .carousel-inner .right a.btn {
+    right: 40px;
+  }
+  .carousel-inner .left a.btn {
+    left: 40px;
+  }
+  .carousel .icon-prev, .carousel .icon-next {
+    padding: 15px 0;
+  }
+}
